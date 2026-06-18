@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | VASBYT</title>
+  <meta name="description" content="Search and browse Vasbyt outdoor, camping, recovery, vehicle and apparel gear.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="data/store-data.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand-lockup" href="index.html"><span class="brand-mark">V</span><span data-brand>VASBYT</span></a>
+      <nav class="nav-links" data-nav></nav>
+      <div class="header-actions"><button class="btn btn-ghost" data-open-quote>Quote <span data-quote-count>0</span></button><button class="mobile-toggle" data-mobile-toggle>Menu</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Searchable product catalogue</span>
+        <h1 data-shop-title>Shop the long road</h1>
+        <p data-shop-subtitle>Search and browse curated outdoor, 4x4, camping and lifestyle gear. Confirm stock, fitment and courier details directly through WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container search-shell">
+        <div class="search-row">
+          <input class="search-input" data-search type="search" placeholder="Try: stuck in sand, bakkie storage, camping light, winter jacket, solar power...">
+          <select class="filter-select" data-collection-select></select>
+          <select class="filter-select" data-sort-select>
+            <option value="featured">Featured first</option>
+            <option value="price-low">Price: low to high</option>
+            <option value="price-high">Price: high to low</option>
+            <option value="az">A to Z</option>
+          </select>
+        </div>
+        <div class="chip-row" data-filter-chips></div>
+        <div class="search-meta" data-search-meta></div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="product-grid" data-products></div>
+        <div style="text-align:center;margin-top:28px;"><button class="btn btn-primary" data-load-more>Load more products</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><h4 data-brand>VASBYT</h4><p>Fast static catalogue. WhatsApp-first ordering. Cloudinary-ready media.</p></div><div><h4>Shop</h4><a href="shop.html">All Gear</a><a href="shop.html?collection=camping">Camping</a></div><div><h4>Contact</h4><a href="contact.html">Contact</a><a data-whatsapp="Hi Vasbyt, I am browsing your catalogue and need help.">WhatsApp</a></div><div><h4>Info</h4><a href="about.html">About</a></div></div></footer>
+
+  <aside class="drawer" data-drawer><div class="drawer-panel"><div class="drawer-head"><h2>Quote Builder</h2><button class="drawer-close" data-close-quote>×</button></div><p style="color: var(--muted);">Add products, then send one clean WhatsApp enquiry.</p><div class="quote-items" data-quote-items></div><a class="btn btn-dark" data-whatsapp-quote target="_blank" rel="noopener">Send WhatsApp Quote</a></div></aside>
+</body>
+</html>

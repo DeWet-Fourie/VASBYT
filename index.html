@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VASBYT | Adventure Gear for the Long Road</title>
+  <meta name="description" content="A premium WhatsApp-first outdoor and adventure product catalogue for camping, 4x4, recovery, power and apparel gear.">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="data/store-data.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand-lockup" href="index.html"><span class="brand-mark">V</span><span data-brand>VASBYT</span></a>
+      <nav class="nav-links" data-nav></nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost" data-open-quote>Quote <span data-quote-count>0</span></button>
+        <a class="btn btn-primary" href="shop.html">Shop Gear</a>
+        <button class="mobile-toggle" data-mobile-toggle>Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">South African Adventure Store</span>
+          <h1>Built for the road that does <span>not</span> end early.</h1>
+          <p>Browse curated camping, recovery, vehicle and outdoor lifestyle gear. Find what fits your trip, build a quote, and confirm stock directly through WhatsApp before payment.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="shop.html">Explore the Catalogue</a>
+            <a class="btn btn-ghost" data-whatsapp="Hi Vasbyt, I need help finding the right gear for my setup.">Ask for Gear Advice</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>150+</strong><span>Product-ready catalogue structure</span></div>
+            <div class="stat"><strong>0</strong><span>Monthly website hosting target</span></div>
+            <div class="stat"><strong>Fast</strong><span>Cloudinary-ready image delivery</span></div>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Outdoor brand feature card">
+          <span class="floating-label">WHATSAPP-FIRST COMMERCE</span>
+          <div class="hero-card-content">
+            <h3>Search, filter, quote. No cold checkout.</h3>
+            <p>Customers browse like an online store, then send a clean product enquiry where stock, delivery and fitment can be confirmed.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container panel">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Menu-driven collections</span>
+            <h2>The menu is the store.</h2>
+          </div>
+          <p>Collections are controlled from one data file. Reorder, rename, hide or add menu items without rebuilding the design.</p>
+        </div>
+        <div class="collection-grid" data-collections></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Recommended Gear</span>
+            <h2>Featured for the first trip.</h2>
+          </div>
+          <p>Product cards are built for speed: Cloudinary image URLs, lazy loading, marked-down prices, stock status and quote actions.</p>
+        </div>
+        <div class="product-grid" data-featured></div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container panel">
+        <div class="split">
+          <div>
+            <span class="eyebrow">Why this system sells</span>
+            <div class="section-heading" style="display:block;margin-bottom:18px;">
+              <h2>Not a template. A buying flow.</h2>
+            </div>
+            <p class="kicker">For outdoor, 4x4 and higher-ticket gear, customers often want to confirm fitment, stock and delivery before paying. This turns that behaviour into the main conversion path.</p>
+            <div class="hero-actions">
+              <a class="btn btn-dark" href="shop.html">Test the Search</a>
+              <button class="btn btn-accent" data-open-quote>Open Quote Builder</button>
+            </div>
+          </div>
+          <div class="feature-list">
+            <div class="feature"><div class="feature-icon">01</div><div><h3>Cloudinary-ready images</h3><p>Use public IDs in the product sheet and the website generates optimized image sizes.</p></div></div>
+            <div class="feature"><div class="feature-icon">02</div><div><h3>Vague product search</h3><p>Search terms like “stuck”, “bakkie”, “power” and “winter” recommend relevant products.</p></div></div>
+            <div class="feature"><div class="feature-icon">03</div><div><h3>Quote-first ordering</h3><p>Products become a clean WhatsApp message for stock, delivery and payment confirmation.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h4 data-brand>VASBYT</h4><p>Adventure gear for the long road. This first version is built as a premium static catalogue system.</p></div>
+      <div><h4>Shop</h4><a href="shop.html">All Gear</a><a href="shop.html?collection=camping">Camping</a><a href="shop.html?collection=recovery">Recovery</a></div>
+      <div><h4>Support</h4><a href="contact.html">Contact</a><a data-whatsapp="Hi Vasbyt, I need help with an order.">WhatsApp</a><a data-email>Email</a></div>
+      <div><h4>System</h4><a href="docs/client-workflow.md">Client workflow</a><a href="README.md">README</a></div>
+    </div>
+  </footer>
+
+  <aside class="drawer" data-drawer>
+    <div class="drawer-panel">
+      <div class="drawer-head"><h2>Quote Builder</h2><button class="drawer-close" data-close-quote>×</button></div>
+      <p style="color: var(--muted);">Add products, then send one clean WhatsApp enquiry.</p>
+      <div class="quote-items" data-quote-items></div>
+      <a class="btn btn-dark" data-whatsapp-quote target="_blank" rel="noopener">Send WhatsApp Quote</a>
+    </div>
+  </aside>
+</body>
+</html>
